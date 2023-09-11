@@ -4,6 +4,8 @@
 
 [在 vue3.0 项目中使用 tinymce 富文本编辑器]()
 
+当前版本是4.0，现在已经更新到6.0版本，可以使用最新的版本
+
 代码已上传至github
 
 仓库地址：[https://github.com/cooj/tinymce-vue3](https://github.com/aigouzz/tinymce-vue3)
