@@ -23,6 +23,7 @@ export default {
   setup(props, context) {
     const content = ref(props.value);
     const tiny = reactive({
+       // my tinymce apikey wobhl5j8d7g4bpe08iqh6n5yyz029esys7p2op2qm0yttlo6
       apiKey: "qagffr3pkuv17a8on1afax661irst1hbr4e6tbv888sz91jc", //https://github.com/tinymce/tinymce-vue/blob/main/src/demo/views/Iframe.vue
       init: {
         language: "zh_CN", //语言类型
