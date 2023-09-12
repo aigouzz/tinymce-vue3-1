@@ -50,14 +50,25 @@ export default {
         // images_upload_base_path: '/demo',  //相对基本路径--关于图片上传建议查看--http://tinymce.ax-z.cn/general/upload-images.php
         paste_data_images: true, //图片是否可粘贴
         //此处为图片上传处理函数
-        images_upload_handler: (blobInfo, success, failure) => {
+        images_upload_handler: (blobInfo, progress) => {
           // 这里用base64的图片形式上传图片,
-          let reader = new FileReader(); //本地预览
+          return new Promise((resolve, reject) => {
+            let reader = new FileReader(); //本地预览
           reader.readAsDataURL(blobInfo.blob());
           reader.onloadend = function () {
             const imgbase64 = reader.result;
-            success(imgbase64);
+            if (imgbase64.toString().length > 50 * 1024 * 1024) {
+              reject({
+                message: '上传图片不能超过50MB',
+              });
+            } else {
+              resolve(imgbase64);
+            }
           };
+          reader.onerror = (err) => {
+            reject(err);
+          }
+          });
         },
 
         file_picker_types: "file image media", //file image media分别对应三个类型文件的上传：link插件，image和axupimgs插件，media插件。想屏蔽某个插件的上传就去掉对应的参数
