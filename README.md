@@ -2,9 +2,10 @@
 
 ### 在 vue3.0 项目中使用 tinymce 富文本编辑器
 
-[在 vue3.0 项目中使用 tinymce 富文本编辑器]()
+在 vue3.0 项目中使用 tinymce 富文本编辑器
 
 当前版本是4.0，现在已经更新到6.0版本，可以使用最新的版本
+官方地址：[https://www.tiny.cloud](https://www.tiny.cloud)
 
 代码已上传至github
 
