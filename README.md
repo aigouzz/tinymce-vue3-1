@@ -9,7 +9,7 @@
 
 代码已上传至github
 
-仓库地址：[https://github.com/cooj/tinymce-vue3](https://github.com/aigouzz/tinymce-vue3)
+仓库地址：[https://github.com/aigouzz/tinymce-vue3](https://github.com/aigouzz/tinymce-vue3)
 
 ## 参考文档
 [tinymce官网及文档：https://www.tiny.cloud/](https://www.tiny.cloud/)
