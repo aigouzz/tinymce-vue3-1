@@ -1,4 +1,4 @@
- <template>
+<template>
   <div class="tinymce-boxz">
     <Editor v-model="content" :api-key="apiKey" :init="init" />
   </div>
@@ -6,6 +6,7 @@
 
 <script>
 import Editor from "@tinymce/tinymce-vue";
+// import tinymce from "tinymce";
 import { reactive, ref, toRefs, watchEffect } from "vue";
 
 export default {
@@ -23,7 +24,7 @@ export default {
   setup(props, context) {
     const content = ref(props.value);
     const tiny = reactive({
-       // my tinymce apikey wobhl5j8d7g4bpe08iqh6n5yyz029esys7p2op2qm0yttlo6
+      // my tinymce apikey wobhl5j8d7g4bpe08iqh6n5yyz029esys7p2op2qm0yttlo6
       apiKey: "qagffr3pkuv17a8on1afax661irst1hbr4e6tbv888sz91jc", //https://github.com/tinymce/tinymce-vue/blob/main/src/demo/views/Iframe.vue
       init: {
         language: "zh_CN", //语言类型
@@ -54,20 +55,20 @@ export default {
           // 这里用base64的图片形式上传图片,
           return new Promise((resolve, reject) => {
             let reader = new FileReader(); //本地预览
-          reader.readAsDataURL(blobInfo.blob());
-          reader.onloadend = function () {
-            const imgbase64 = reader.result;
-            if (imgbase64.toString().length > 50 * 1024 * 1024) {
-              reject({
-                message: '上传图片不能超过50MB',
-              });
-            } else {
-              resolve(imgbase64);
-            }
-          };
-          reader.onerror = (err) => {
-            reject(err);
-          }
+            reader.readAsDataURL(blobInfo.blob());
+            reader.onloadend = function () {
+              const imgbase64 = reader.result;
+              if (imgbase64.toString().length > 50 * 1024 * 1024) {
+                reject({
+                  message: "上传图片不能超过50MB",
+                });
+              } else {
+                resolve(imgbase64);
+              }
+            };
+            reader.onerror = (err) => {
+              reject(err);
+            };
           });
         },
 
@@ -141,5 +142,3 @@ export default {
   max-width: 100%;
 }
 </style>
-
-
