@@ -9,6 +9,7 @@ specifiers:
   '@vue/cli-service': ~4.5.0
   '@vue/compiler-sfc': ^3.0.0
   '@vue/eslint-config-prettier': ^6.0.0
+  '@vue/reactivity': ^3.3.4
   babel-eslint: ^10.1.0
   core-js: ^3.6.5
   eslint: ^6.7.2
@@ -23,6 +24,7 @@ specifiers:
 
 dependencies:
   '@tinymce/tinymce-vue': registry.npmmirror.com/@tinymce/tinymce-vue/4.0.7_vue@3.3.4
+  '@vue/reactivity': registry.npmmirror.com/@vue/reactivity/3.3.4
   core-js: registry.npmmirror.com/core-js/3.32.2
   vue: registry.npmmirror.com/vue/3.3.4
   vue-router: registry.npmmirror.com/vue-router/4.2.5_vue@3.3.4

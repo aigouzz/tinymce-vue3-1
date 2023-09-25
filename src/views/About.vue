@@ -9,6 +9,7 @@
 
 <script>
 import Editor from "@tinymce/tinymce-vue";
+import tinymce from "@tinymce/tinymce-vue/";
 import { reactive, ref, toRefs } from "@vue/reactivity";
 
 export default {
