@@ -46,13 +46,13 @@ export default {
         // images_upload_base_path: '/demo',  //相对基本路径--关于图片上传建议查看--http://tinymce.ax-z.cn/general/upload-images.php
         paste_data_images: true, //图片是否可粘贴
         //此处为图片上传处理函数
-        images_upload_handler: (blobInfo, success, failure) => {
+        images_upload_handler: (blobInfo, handler) => {
           // 这里用base64的图片形式上传图片,包括多图上传也是
           let reader = new FileReader(); //本地预览
           reader.readAsDataURL(blobInfo.blob());
           reader.onloadend = function () {
             const imgbase64 = reader.result;
-            success(imgbase64);
+            handler(imgbase64);
           };
         },
 
