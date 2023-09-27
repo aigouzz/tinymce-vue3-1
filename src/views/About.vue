@@ -71,7 +71,7 @@ export default {
               ".pdf, .txt, .zip, .rar, .7z, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .mp3, .mp4, .jpg, .jpeg, .png, .gif, .ico, .svg";
           }
 
-          let inputElem = document.createElement("input"); //创建文件选择
+          const inputElem = document.createElement("input"); //创建文件选择
           inputElem.setAttribute("type", "file");
           inputElem.setAttribute("accept", filetype);
           inputElem.click();
