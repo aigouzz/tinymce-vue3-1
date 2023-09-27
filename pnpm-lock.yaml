@@ -18,6 +18,7 @@ specifiers:
   prettier: ^2.2.1
   sass: ^1.26.5
   sass-loader: ^8.0.2
+  tinymce: ^6.7.0
   vue: ^3.0.0
   vue-router: ^4.0.0-0
   vuex: ^4.0.0-0
@@ -26,6 +27,7 @@ dependencies:
   '@tinymce/tinymce-vue': registry.npmmirror.com/@tinymce/tinymce-vue/4.0.7_vue@3.3.4
   '@vue/reactivity': registry.npmmirror.com/@vue/reactivity/3.3.4
   core-js: registry.npmmirror.com/core-js/3.32.2
+  tinymce: registry.npmmirror.com/tinymce/6.7.0
   vue: registry.npmmirror.com/vue/3.3.4
   vue-router: registry.npmmirror.com/vue-router/4.2.5_vue@3.3.4
   vuex: registry.npmmirror.com/vuex/4.1.0_vue@3.3.4
@@ -11425,6 +11427,12 @@ packages:
     resolution: {integrity: sha512-9UUjaO0R7FxcFo0oxnd1lMs7H+D0Eh+dDVo5hKbVe1a+VB0nit97vOqlinj+YwgoBDt6/DSCUoWqAYlLI8BLYA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tinymce/-/tinymce-5.10.7.tgz}
     name: tinymce
     version: 5.10.7
+    dev: false
+
+  registry.npmmirror.com/tinymce/6.7.0:
+    resolution: {integrity: sha512-Wf2RSobIXQ7XNw3/v4z1lPGiH3Pjsmc/6/7fG28aIS6uVWj/7IhvOPuwfJJDeOx0o0D3nSnoLHgR2KU8JAdE+w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tinymce/-/tinymce-6.7.0.tgz}
+    name: tinymce
+    version: 6.7.0
     dev: false
 
   registry.npmmirror.com/tmp/0.0.33:

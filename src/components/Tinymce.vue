@@ -6,7 +6,7 @@
 
 <script>
 import Editor from "@tinymce/tinymce-vue";
-// import tinymce from "tinymce";
+// import tinymce from "tinymce/tinymce";
 import { reactive, ref, toRefs, watchEffect } from "vue";
 
 export default {
