@@ -4,7 +4,9 @@
     <router-link to="/about">About</router-link>
   </div>
   <div class="container">
-    <router-view />
+    <Transition>
+      <router-view />
+    </Transition>
   </div>
 </template>
 
@@ -46,5 +48,14 @@ body {
   border-left: 4px solid #1abc9c;
   background: #f1f1f1;
   padding: 10px;
+}
+.v-enter-active,
+.v-leave-active {
+  transition: transform 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  transform: scale(0.9) rotate(45deg);
 }
 </style>
