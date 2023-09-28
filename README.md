@@ -20,7 +20,7 @@
 
 [在vue3.0+中使用tinymce及实现多图上传，文件上传等功能：https://www.cnblogs.com/huihuihero/p/13877589.html]
 
-## Project setup
+## 创建项目
 
 安装所需的模块包
 
