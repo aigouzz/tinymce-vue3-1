@@ -43,3 +43,5 @@ npm run serve
 ```
 npm run build
 ```
+
+## tinymce自定义插件
