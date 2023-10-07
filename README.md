@@ -45,3 +45,5 @@ npm run build
 ```
 
 ## tinymce自定义插件
+
+自定义插件可以查看http://tinymce.ax-z.cn/more-plugins/bdmap.php
